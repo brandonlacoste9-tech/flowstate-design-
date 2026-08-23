@@ -91,6 +91,36 @@ export const caseStudies: CaseStudy[] = [
     },
   },
   {
+    slug: "mednam",
+    niche: ["clinic", "rebuild", "healthcare"],
+    year: "2026",
+    featured: true,
+    accent: "#0f6b6b",
+    image: "/work/mednam.jpg",
+    liveUrl: "https://cliniquemednam.com/en/",
+    previewUrl: "https://mednam.netlify.app",
+    title: {
+      en: "Clinique MedNam — GMF-U in Lachine",
+      fr: "Clinique MedNam — GMF-U à Lachine",
+    },
+    summary: {
+      en: "A rebuild of cliniquemednam.com, live at mednam.netlify.app. University family medicine group. 2000 Rue Notre-Dame, suite 301. Portal, RVSQ, GAP — not a fake booking form.",
+      fr: "Une refonte de cliniquemednam.com, en ligne sur mednam.netlify.app. GMF universitaire. 2000, rue Notre-Dame, bureau 301. Portail, RVSQ, GAP — pas un faux formulaire de rendez-vous.",
+    },
+    challenge: {
+      en: "A clinic site has to send patients to the tools they already use: the MedFar portal, RVSQ, GAP, GAMF, and the phone tree. Email cannot book or renew. RAMQ prices are not ours to invent.",
+      fr: "Un site de clinique doit envoyer les patients vers les outils qu’ils ont déjà : portail MedFar, RVSQ, GAP, GAMF, et l’arbre téléphonique. Le courriel ne réserve pas et ne renouvelle pas. Les tarifs RAMQ ne sont pas à inventer.",
+    },
+    approach: {
+      en: "We rebuilt around Lachine, the hours they print, and the doors that actually exist. Appointments go to the portal or Quebec’s services. The assistant orients — it does not book a slot and does not impersonate Navig.",
+      fr: "Nous avons reconstruit autour de Lachine, des heures qu’ils impriment, et des portes qui existent. Les rendez-vous vont au portail ou aux services du Québec. L’assistant oriente — il ne prend pas de plage et n’imite pas Navig.",
+    },
+    outcome: {
+      en: "The rebuild is live at mednam.netlify.app. Their live site stays until they switch. We did not overlay a Clinika login or invent a price.",
+      fr: "La refonte est en ligne sur mednam.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas collé un login Clinika ni inventé un tarif.",
+    },
+  },
+  {
     slug: "the-toronto-plumber",
     niche: ["trades", "rebuild", "local-service"],
     year: "2026",

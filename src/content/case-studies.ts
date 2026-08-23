@@ -120,6 +120,36 @@ export const caseStudies: CaseStudy[] = [
       fr: "La refonte est en ligne sur mednam.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas collé un login Clinika ni inventé un tarif.",
     },
   },
+  {
+    slug: "brasserie-le-manoir",
+    niche: ["restaurant", "rebuild", "brasserie"],
+    year: "2026",
+    featured: true,
+    accent: "#3d4a32",
+    image: "/work/brasserie-manoir.jpg",
+    liveUrl: "https://www.brasseriemanoir.com/",
+    previewUrl: "https://brasserie-le-manoir.netlify.app",
+    title: {
+      en: "Brasserie Le Manoir — four rooms, phone for a table",
+      fr: "Brasserie Le Manoir — quatre salles, table au téléphone",
+    },
+    summary: {
+      en: "A rebuild of brasseriemanoir.com, live at brasserie-le-manoir.netlify.app. Pointe-Claire, NDG, Lachine, and Petit Manoir in Pierrefonds. Call the room you want.",
+      fr: "Une refonte de brasseriemanoir.com, en ligne sur brasserie-le-manoir.netlify.app. Pointe-Claire, NDG, Lachine et Petit Manoir à Pierrefonds. Appelez la salle que vous voulez.",
+    },
+    challenge: {
+      en: "Four brasseries, different hours, different phones. Tables are reserved by calling that location — not a chain booking widget. Ready-to-eat meals are a separate door.",
+      fr: "Quatre brasseries, des heures et des téléphones différents. Les tables se réservent en appelant cette salle — pas un widget de chaîne. Le prêt-à-manger est une autre porte.",
+    },
+    approach: {
+      en: "We rebuilt the family as four rooms. Their menu, their photos. Breakfast through late night. No invented OpenTable. You call Pointe-Claire, NDG, Lachine, or Pierrefonds.",
+      fr: "Nous avons reconstruit la famille en quatre salles. Leur menu, leurs photos. Du déjeuner jusqu’au tard. Pas d’OpenTable inventé. On appelle Pointe-Claire, NDG, Lachine ou Pierrefonds.",
+    },
+    outcome: {
+      en: "The rebuild is live at brasserie-le-manoir.netlify.app. Their live site stays until they switch. We did not take tables on the preview.",
+      fr: "La refonte est en ligne sur brasserie-le-manoir.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas pris de tables sur l’aperçu.",
+    },
+  },
 ];
 
 export function getCaseStudy(slug: string) {
@@ -127,5 +157,5 @@ export function getCaseStudy(slug: string) {
 }
 
 export function getFeaturedCaseStudies() {
-  return caseStudies.filter((c) => c.featured).slice(0, 4);
+  return caseStudies.filter((c) => c.featured).slice(0, 5);
 }

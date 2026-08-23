@@ -61,6 +61,36 @@ export const caseStudies: CaseStudy[] = [
     },
   },
   {
+    slug: "scarolies",
+    niche: ["restaurant", "rebuild", "italian"],
+    year: "2026",
+    featured: true,
+    accent: "#6b1c23",
+    image: "/work/scarolies.jpg",
+    liveUrl: "http://www.scarolies.com/",
+    previewUrl: "https://scarolies.netlify.app",
+    title: {
+      en: "Scarolie’s — pasta emporium in Pointe-Claire",
+      fr: "Scarolie’s — emporium de pâtes à Pointe-Claire",
+    },
+    summary: {
+      en: "A rebuild of scarolies.com, live at scarolies.netlify.app. 950 St-Jean Blvd. Pasta, pizza, grill. Tables on TB Dine or (514) 694-8611.",
+      fr: "Une refonte de scarolies.com, en ligne sur scarolies.netlify.app. 950, boul. Saint-Jean. Pâtes, pizza, grillades. Tables sur TB Dine ou au (514) 694-8611.",
+    },
+    challenge: {
+      en: "One room in Pointe-Claire. Online reservations go through TB Dine on their live site — not a form we should invent. Hours, the card, family takeaway plates, and a phone that actually rings the restaurant.",
+      fr: "Une salle à Pointe-Claire. Les réservations en ligne passent par TB Dine sur leur site — pas un formulaire à inventer. Heures, la carte, les plats familiaux, et un téléphone qui sonne vraiment au resto.",
+    },
+    approach: {
+      en: "We rebuilt around their photos, their menu, and their booker. The maître can talk hours and the board. Tables stay on TB Dine or the phone. Bilingual EN/FR, like their live pages.",
+      fr: "Nous avons reconstruit autour de leurs photos, leur menu et leur outil de réservation. Le maître parle heures et carte. Les tables restent sur TB Dine ou le téléphone. Bilingue EN/FR, comme leurs pages.",
+    },
+    outcome: {
+      en: "The rebuild is live at scarolies.netlify.app. We did not replace their live site, and we did not take tables ourselves.",
+      fr: "La refonte est en ligne sur scarolies.netlify.app. Nous n’avons pas remplacé leur site, et nous n’avons pas pris les tables nous-mêmes.",
+    },
+  },
+  {
     slug: "the-toronto-plumber",
     niche: ["trades", "rebuild", "local-service"],
     year: "2026",
@@ -96,5 +126,5 @@ export function getCaseStudy(slug: string) {
 }
 
 export function getFeaturedCaseStudies() {
-  return caseStudies.filter((c) => c.featured).slice(0, 3);
+  return caseStudies.filter((c) => c.featured).slice(0, 4);
 }

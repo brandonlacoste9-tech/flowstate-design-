@@ -150,6 +150,36 @@ export const caseStudies: CaseStudy[] = [
       fr: "La refonte est en ligne sur brasserie-le-manoir.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas pris de tables sur l’aperçu.",
     },
   },
+  {
+    slug: "sante-kildare",
+    niche: ["clinic", "rebuild", "healthcare"],
+    year: "2026",
+    featured: true,
+    accent: "#1a5f4a",
+    image: "/work/sante-kildare.jpg",
+    liveUrl: "https://www.santekildare.ca/",
+    previewUrl: "https://santekildare.netlify.app",
+    title: {
+      en: "Santé Kildare — GMF in Côte-Saint-Luc",
+      fr: "Santé Kildare — GMF à Côte-Saint-Luc",
+    },
+    summary: {
+      en: "A rebuild of santekildare.ca, live at santekildare.netlify.app. Family medicine since 2011. 5555 Westminster, suite 200. Sofy, Ocean, GAP — not a fake booking form.",
+      fr: "Une refonte de santekildare.ca, en ligne sur santekildare.netlify.app. Médecine familiale depuis 2011. 5555 Westminster, bureau 200. Sofy, Ocean, GAP — pas un faux formulaire de rendez-vous.",
+    },
+    challenge: {
+      en: "Registered patients book on Sofy. GAP for this territory is 811 option 3. The clinic does not invent a public walk-in queue or RAMQ prices. Email is not a booking door.",
+      fr: "Les patients inscrits réservent sur Sofy. Le GAP de ce territoire est le 811 option 3. La clinique n’invente pas une file walk-in publique ni des tarifs RAMQ. Le courriel n’est pas une porte de rendez-vous.",
+    },
+    approach: {
+      en: "We rebuilt around the doors they already print: Sofy, Ocean, RVSQ, GAP, the phone. Hours and the team as they name them. The assistant orients — it does not book a slot.",
+      fr: "Nous avons reconstruit autour des portes qu’ils impriment déjà : Sofy, Ocean, RVSQ, GAP, le téléphone. Heures et équipe comme ils les nomment. L’assistant oriente — il ne prend pas de plage.",
+    },
+    outcome: {
+      en: "The rebuild is live at santekildare.netlify.app. Their WordPress stays until they switch. We did not invent an email inbox or a walk-in line.",
+      fr: "La refonte est en ligne sur santekildare.netlify.app. Leur WordPress reste jusqu’au basculement. Nous n’avons pas inventé une boîte courriel ni une file walk-in.",
+    },
+  },
 ];
 
 export function getCaseStudy(slug: string) {
@@ -157,5 +187,5 @@ export function getCaseStudy(slug: string) {
 }
 
 export function getFeaturedCaseStudies() {
-  return caseStudies.filter((c) => c.featured).slice(0, 5);
+  return caseStudies.filter((c) => c.featured).slice(0, 6);
 }

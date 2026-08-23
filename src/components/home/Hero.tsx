@@ -117,8 +117,8 @@ export function Hero() {
               />
             </div>
             {featured.length > 0 ? (
-              <div className="grid grid-cols-2 gap-px border-t border-border bg-border sm:grid-cols-5">
-                {featured.slice(0, 5).map((study) => (
+              <div className="grid grid-cols-3 gap-px border-t border-border bg-border sm:grid-cols-6">
+                {featured.slice(0, 6).map((study) => (
                   <div key={study.slug} className="relative aspect-[4/3] bg-surface">
                     <Image
                       src={study.image}

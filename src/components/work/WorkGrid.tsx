@@ -12,8 +12,16 @@ export function WorkGrid({
   return (
     <div className="grid auto-rows-[minmax(260px,1fr)] gap-3 sm:grid-cols-2 lg:auto-rows-[minmax(340px,1fr)]">
       {studies.map((study, i) => (
-        <FadeIn key={study.slug} delay={i * 0.06}>
-          <WorkCard study={study} locale={locale} />
+        <FadeIn
+          key={study.slug}
+          delay={i * 0.06}
+          className={
+            i === studies.length - 1 && studies.length % 2 === 1
+              ? "sm:col-span-2"
+              : "h-full"
+          }
+        >
+          <WorkCard study={study} locale={locale} className="h-full" />
         </FadeIn>
       ))}
     </div>

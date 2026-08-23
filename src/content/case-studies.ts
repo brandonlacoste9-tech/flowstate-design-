@@ -204,6 +204,40 @@ export const caseStudies: CaseStudy[] = [
       fr: "La refonte est en ligne sur santekildare.netlify.app. Leur WordPress reste jusqu’au basculement. Nous n’avons pas inventé une boîte courriel ni une file walk-in.",
     },
   },
+  {
+    slug: "intermezzo-vernon",
+    niche: ["restaurant", "rebuild", "wine-cellar"],
+    year: "2026",
+    featured: true,
+    accent: "#4a1520",
+    image: "/work/intermezzo-vernon.jpg",
+    liveUrl: "https://intermezzowinecellar.com/",
+    previewUrl: "https://intermezzo-vernon.netlify.app",
+    name: {
+      en: "Intermezzo",
+      fr: "Intermezzo",
+    },
+    title: {
+      en: "Intermezzo — two restaurants in Vernon, one phone",
+      fr: "Intermezzo — deux restos à Vernon, un téléphone",
+    },
+    summary: {
+      en: "A rebuild of intermezzowinecellar.com, live at intermezzo-vernon.netlify.app. Downtown wine cellar on 34th, Castle Bistro at Swan Lake. One number: (250) 542-3853.",
+      fr: "Une refonte de intermezzowinecellar.com, en ligne sur intermezzo-vernon.netlify.app. Cave à vin au centre-ville, Castle Bistro à Swan Lake. Un numéro : (250) 542-3853.",
+    },
+    challenge: {
+      en: "Two rooms, one phone. Downtown takes some tables on TB Dine — wine cellar and large parties are a call. Castle Bistro has no phone of its own. You call downtown and ask for Castle. Hours are not the same at both rooms.",
+      fr: "Deux salles, un téléphone. Au centre-ville, une partie des tables passe par TB Dine — cave et grands groupes, on appelle. Castle Bistro n’a pas de ligne. On appelle le centre-ville et on demande Castle. Les heures ne sont pas les mêmes.",
+    },
+    approach: {
+      en: "We rebuilt them as two rooms, not one restaurant. Their plates. Downtown daily 1–9. Castle Wednesday–Sunday from 4. TB Dine where they already use it. No invented booking widget on Greenhow Road.",
+      fr: "Nous les avons reconstruites en deux salles, pas un seul resto. Leurs assiettes. Centre-ville tous les jours 13 h–21 h. Castle mercredi–dimanche dès 16 h. TB Dine là où ils l’utilisent déjà. Pas de widget inventé sur Greenhow.",
+    },
+    outcome: {
+      en: "The rebuild is live at intermezzo-vernon.netlify.app. Their live site stays until they switch. We did not put a phone on Castle that isn’t there.",
+      fr: "La refonte est en ligne sur intermezzo-vernon.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas mis de téléphone à Castle s’il n’y en a pas.",
+    },
+  },
 ];
 
 export function getCaseStudy(slug: string) {
@@ -211,7 +245,7 @@ export function getCaseStudy(slug: string) {
 }
 
 export function getFeaturedCaseStudies() {
-  return caseStudies.filter((c) => c.featured).slice(0, 6);
+  return caseStudies.filter((c) => c.featured);
 }
 
 export function getWorkHref(study: CaseStudy) {

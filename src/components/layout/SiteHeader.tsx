@@ -21,8 +21,8 @@ export function SiteHeader() {
   ] as const;
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/80 bg-bg/80 backdrop-blur-md">
-      <Container className="flex h-16 items-center justify-between gap-4">
+    <header className="sticky top-0 z-40 border-b border-border/70 bg-bg/75 backdrop-blur-md">
+      <Container className="flex h-[4.25rem] items-center justify-between gap-4">
         <LogoMark />
 
         <nav

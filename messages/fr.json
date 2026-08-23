@@ -17,14 +17,15 @@
   },
   "hero": {
     "eyebrow": "flowstate-webdesign.com · Montréal",
-    "title": "On refait le site que vous avez. On construit aussi celui que vous n’avez pas.",
+    "title": "On refait le site que vous avez.\nOn construit aussi celui que vous n’avez pas.",
     "subtitle": "Flowstate, c’est Brandon Leroux. Sites Next.js pour restos, métiers et commerces — honnêtes sur les heures, les salles, et comment vous prenez vraiment une table.",
+    "kicker": "Refontes  ·  Sites neufs  ·  Honnête sur la salle",
     "point1": "Refontes et redesigns de sites en ligne",
     "point2": "Sites neufs à partir d’un nom et d’un téléphone",
     "point3": "On n’invente pas les prix, les heures, ni les outils de réservation",
     "ctaPrimary": "Démarrer un projet",
     "ctaSecondary": "Voir les projets",
-    "previewCaption": "Refontes récentes — restos et métiers"
+    "previewCaption": "Cliquez une photo — ça ouvre le site"
   },
   "proof": {
     "montreal": "Montréal",
@@ -48,9 +49,9 @@
     "description": "On n’invente pas de citations clients. Le travail est la preuve — cliquez les refontes."
   },
   "home": {
-    "featuredEyebrow": "Projets",
-    "featuredTitle": "Refontes récentes",
-    "featuredDescription": "De vrais commerces. On a reconstruit leurs sites en aperçus Next.js. Leur WordPress ou site actuel reste jusqu’à ce qu’ils basculent.",
+    "featuredEyebrow": "Projets choisis",
+    "featuredTitle": "D’autres refontes en ligne",
+    "featuredDescription": "Une clinique à Lachine, quatre brasseries, un GMF à Côte-Saint-Luc. Même règle : leurs outils, pas des outils inventés.",
     "packagesEyebrow": "Ce qu’on fait",
     "packagesTitle": "Refonte. Site neuf. Sur mesure quand ce n’est pas une brochure.",
     "packagesCta": "Voir les services",

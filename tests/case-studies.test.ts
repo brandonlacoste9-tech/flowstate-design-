@@ -16,6 +16,7 @@ describe("caseStudies", () => {
   it("every study has en and fr title/challenge/approach/outcome", () => {
     for (const c of caseStudies) {
       for (const locale of ["en", "fr"] as const) {
+        expect(c.name[locale].length).toBeGreaterThan(0);
         expect(c.title[locale].length).toBeGreaterThan(0);
         expect(c.challenge[locale].length).toBeGreaterThan(0);
         expect(c.approach[locale].length).toBeGreaterThan(0);

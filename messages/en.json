@@ -17,14 +17,15 @@
   },
   "hero": {
     "eyebrow": "flowstate-webdesign.com · Montreal",
-    "title": "We rebuild the site you have. We also build the one you don’t.",
+    "title": "We rebuild the site you have.\nWe also build the one you don’t.",
     "subtitle": "Flowstate is Brandon Leroux. Next.js sites for restaurants, trades, and local businesses — honest about hours, rooms, and how you actually take a table.",
+    "kicker": "Rebuilds  ·  New sites  ·  Honest about the room",
     "point1": "Rebuilds and redesigns of live sites",
     "point2": "Brand-new websites from a name and a phone",
     "point3": "We don’t invent prices, hours, or booking tools",
     "ctaPrimary": "Start a project",
     "ctaSecondary": "See the work",
-    "previewCaption": "Recent rebuilds — restaurants and trades"
+    "previewCaption": "Click a photo — it opens the site"
   },
   "proof": {
     "montreal": "Montreal",
@@ -48,14 +49,14 @@
     "description": "We don’t invent client quotes. The work is the proof — click through the rebuilds."
   },
   "home": {
-    "featuredEyebrow": "Work",
-    "featuredTitle": "Recent rebuilds",
-    "featuredDescription": "Live businesses. We rebuilt their sites as Next.js previews. Their WordPress or current site stays until they say switch.",
+    "featuredEyebrow": "Selected work",
+    "featuredTitle": "More live rebuilds",
+    "featuredDescription": "A clinic in Lachine, four brasseries, a GMF in Côte-Saint-Luc. Same rule: their tools, not invented ones.",
     "packagesEyebrow": "What we do",
     "packagesTitle": "Rebuild. New site. Custom when it isn’t a brochure.",
     "packagesCta": "See services",
     "processEyebrow": "Process",
-    "processTitle": "From your live pages to a preview you can click",
+    "processTitle": "From your live pages to a clickable preview",
     "aboutEyebrow": "Studio",
     "aboutTitle": "Design in a flow state",
     "aboutBody": "Flowstate is one person who builds websites the way the business actually runs. Montreal. Next.js. No invented diner at the wrong address.",

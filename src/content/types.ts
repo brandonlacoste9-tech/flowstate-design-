@@ -11,6 +11,8 @@ export type CaseStudy = {
   image: string;
   liveUrl?: string;
   previewUrl?: string;
+  /** Short name on work cards. Full sentence stays on `title`. */
+  name: LocalizedString;
   title: LocalizedString;
   summary: LocalizedString;
   challenge: LocalizedString;

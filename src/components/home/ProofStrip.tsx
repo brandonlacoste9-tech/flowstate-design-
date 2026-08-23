@@ -13,16 +13,16 @@ export function ProofStrip() {
   ] as const;
 
   return (
-    <section className="border-b border-border/60 bg-surface/30 py-10 sm:py-12">
+    <section className="border-y border-border/60 py-12 sm:py-16">
       <Container>
         <FadeIn>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
             {items.map((item) => (
-              <div key={item.label} className="space-y-1">
-                <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-accent">
+              <div key={item.label} className="space-y-2">
+                <p className="font-display text-2xl text-text sm:text-[1.65rem]">
                   {item.label}
                 </p>
-                <p className="text-sm leading-snug text-muted">{item.detail}</p>
+                <p className="text-sm leading-relaxed text-muted">{item.detail}</p>
               </div>
             ))}
           </div>

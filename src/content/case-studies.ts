@@ -9,6 +9,10 @@ export const caseStudies: CaseStudy[] = [
     accent: "#7a1f24",
     image: "/work/joes-italian.jpg",
     liveUrl: "https://joesitaliankitchen.ca",
+    name: {
+      en: "Joe’s Italian Kitchen",
+      fr: "Joe’s Italian Kitchen",
+    },
     title: {
       en: "Joe’s Italian Kitchen — three rooms, one family",
       fr: "Joe’s Italian Kitchen — trois salles, une famille",
@@ -39,6 +43,10 @@ export const caseStudies: CaseStudy[] = [
     image: "/work/wellington-diner.jpg",
     liveUrl: "https://www.wellingtondiner.com/",
     previewUrl: "https://wellington-diner.netlify.app",
+    name: {
+      en: "Wellington Diner",
+      fr: "Wellington Diner",
+    },
     title: {
       en: "Wellington Diner — the room on Wellington, not a chain",
       fr: "Wellington Diner — la salle sur Wellington, pas une chaîne",
@@ -69,6 +77,10 @@ export const caseStudies: CaseStudy[] = [
     image: "/work/scarolies.jpg",
     liveUrl: "http://www.scarolies.com/",
     previewUrl: "https://scarolies.netlify.app",
+    name: {
+      en: "Scarolie’s",
+      fr: "Scarolie’s",
+    },
     title: {
       en: "Scarolie’s — pasta emporium in Pointe-Claire",
       fr: "Scarolie’s — emporium de pâtes à Pointe-Claire",
@@ -99,6 +111,10 @@ export const caseStudies: CaseStudy[] = [
     image: "/work/mednam.jpg",
     liveUrl: "https://cliniquemednam.com/en/",
     previewUrl: "https://mednam.netlify.app",
+    name: {
+      en: "Clinique MedNam",
+      fr: "Clinique MedNam",
+    },
     title: {
       en: "Clinique MedNam — GMF-U in Lachine",
       fr: "Clinique MedNam — GMF-U à Lachine",
@@ -129,6 +145,10 @@ export const caseStudies: CaseStudy[] = [
     image: "/work/brasserie-manoir.jpg",
     liveUrl: "https://www.brasseriemanoir.com/",
     previewUrl: "https://brasserie-le-manoir.netlify.app",
+    name: {
+      en: "Brasserie Le Manoir",
+      fr: "Brasserie Le Manoir",
+    },
     title: {
       en: "Brasserie Le Manoir — four rooms, phone for a table",
       fr: "Brasserie Le Manoir — quatre salles, table au téléphone",
@@ -159,6 +179,10 @@ export const caseStudies: CaseStudy[] = [
     image: "/work/sante-kildare.jpg",
     liveUrl: "https://www.santekildare.ca/",
     previewUrl: "https://santekildare.netlify.app",
+    name: {
+      en: "Santé Kildare",
+      fr: "Santé Kildare",
+    },
     title: {
       en: "Santé Kildare — GMF in Côte-Saint-Luc",
       fr: "Santé Kildare — GMF à Côte-Saint-Luc",
@@ -188,4 +212,18 @@ export function getCaseStudy(slug: string) {
 
 export function getFeaturedCaseStudies() {
   return caseStudies.filter((c) => c.featured).slice(0, 6);
+}
+
+export function getWorkHref(study: CaseStudy) {
+  return study.previewUrl ?? study.liveUrl;
+}
+
+export function getWorkHost(study: CaseStudy) {
+  const href = getWorkHref(study);
+  if (!href) return "";
+  try {
+    return new URL(href).host.replace(/^www\./, "");
+  } catch {
+    return href.replace(/^https?:\/\//, "");
+  }
 }

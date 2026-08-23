@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/home/Hero";
+import { WorkMarquee } from "@/components/home/WorkMarquee";
 import { ProofStrip } from "@/components/home/ProofStrip";
-import { TrustStrip } from "@/components/home/TrustStrip";
 import { FeaturedWork } from "@/components/home/FeaturedWork";
 import { PackagesTeaser } from "@/components/home/PackagesTeaser";
 import { ProcessSection } from "@/components/home/ProcessSection";
@@ -41,9 +41,9 @@ export default async function HomePage({
   return (
     <>
       <Hero />
-      <ProofStrip />
-      <TrustStrip />
+      <WorkMarquee />
       <FeaturedWork />
+      <ProofStrip />
       <PackagesTeaser />
       <ProcessSection />
       <AboutSnippet />

@@ -22,7 +22,7 @@ export function CustomProjectBlock({
           aria-hidden
         />
         <div className="relative max-w-2xl">
-          <h3 className="text-2xl font-semibold tracking-tight text-text">
+          <h3 className="font-display text-3xl text-text">
             {title}
           </h3>
           <p className="mt-4 text-base leading-relaxed text-muted">{body}</p>

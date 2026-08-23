@@ -6,6 +6,7 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import { Link } from "@/i18n/navigation";
 import { ProjectMock } from "@/components/work/ProjectMock";
 import { Button } from "@/components/ui/Button";
+import { getWorkHref } from "@/content/case-studies";
 
 export async function CaseStudyView({
   study,
@@ -15,6 +16,7 @@ export async function CaseStudyView({
   locale: Locale;
 }) {
   const t = await getTranslations("work");
+  const href = getWorkHref(study);
 
   const sections = [
     { key: "challenge" as const, body: study.challenge[locale] },
@@ -47,20 +49,20 @@ export async function CaseStudyView({
             ))}
           </div>
 
-          <h1 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight text-text sm:text-4xl lg:text-5xl">
+          <h1 className="mt-5 max-w-3xl font-display text-4xl leading-[1.08] text-text sm:text-5xl lg:text-6xl">
             {study.title[locale]}
           </h1>
 
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
             {study.summary[locale]}
           </p>
-          {study.previewUrl ? (
+          {href ? (
             <p className="mt-6">
               <a
-                href={study.previewUrl}
+                href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-bg transition-colors hover:bg-accent-hover"
+                className="inline-flex items-center rounded-full bg-text px-4 py-2 text-sm font-medium text-bg transition-colors hover:bg-white"
               >
                 {t("viewPreview")} →
               </a>
@@ -75,8 +77,9 @@ export async function CaseStudyView({
               alt={study.title[locale]}
               fill
               priority
+              unoptimized
               sizes="(max-width: 1024px) 100vw, 960px"
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
         </FadeIn>

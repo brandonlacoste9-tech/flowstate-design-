@@ -31,28 +31,54 @@ export default async function ContactPage({
   return (
     <section className="py-16 sm:py-24">
       <Container>
-        <FadeIn>
-          <SectionHeading title={t("title")} description={t("description")} />
-          <p className="mt-4 text-sm text-muted">
-            {t("directEmail")}{" "}
-            <a
-              href={studio.emailHref}
-              className="text-accent transition-colors hover:text-accent-hover"
-            >
-              {studio.email}
-            </a>
-            {" · "}
-            <a
-              href={studio.phoneHref}
-              className="text-accent transition-colors hover:text-accent-hover"
-            >
-              {studio.phone}
-            </a>
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.08}>
-          <ContactForm />
-        </FadeIn>
+        <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div>
+            <FadeIn>
+              <SectionHeading title={t("title")} description={t("description")} />
+              <p className="mt-4 text-sm text-muted">
+                {t("directEmail")}{" "}
+                <a
+                  href={studio.emailHref}
+                  className="text-accent transition-colors hover:text-accent-hover"
+                >
+                  {studio.email}
+                </a>
+                {" · "}
+                <a
+                  href={studio.phoneHref}
+                  className="text-accent transition-colors hover:text-accent-hover"
+                >
+                  {studio.phone}
+                </a>
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.08}>
+              <div className="mt-10">
+                <ContactForm />
+              </div>
+            </FadeIn>
+          </div>
+
+          <FadeIn delay={0.1}>
+            <div className="border-t border-border/80 pt-6 lg:mt-4">
+              <p className="font-display text-5xl leading-none text-text sm:text-6xl">
+                {studio.city[locale as "en" | "fr"]}
+              </p>
+              <a
+                href={studio.phoneHref}
+                className="mt-6 block font-display text-2xl text-muted transition-colors hover:text-accent"
+              >
+                {studio.phone}
+              </a>
+              <a
+                href={studio.emailHref}
+                className="mt-2 block text-sm text-muted transition-colors hover:text-accent"
+              >
+                {studio.email}
+              </a>
+            </div>
+          </FadeIn>
+        </div>
       </Container>
     </section>
   );

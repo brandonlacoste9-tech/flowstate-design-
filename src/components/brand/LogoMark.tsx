@@ -45,8 +45,8 @@ export function LogoMark({
         <circle cx="30" cy="12" r="2.25" className="fill-accent" />
       </svg>
       {showWordmark ? (
-        <span className="font-semibold tracking-[0.14em] text-text">
-          FLOWSTATE
+        <span className="font-display text-[1.35rem] leading-none tracking-tight text-text">
+          Flowstate
         </span>
       ) : null}
     </span>

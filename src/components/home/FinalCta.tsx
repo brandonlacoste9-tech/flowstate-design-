@@ -7,24 +7,24 @@ export function FinalCta() {
   const t = useTranslations("home");
 
   return (
-    <section className="pb-24 pt-4 sm:pb-28">
+    <section className="pb-24 pt-8 sm:pb-32">
       <Container>
         <FadeIn>
-          <div className="relative overflow-hidden rounded-[calc(var(--radius)+4px)] border border-accent/30 bg-surface/60 px-6 py-12 sm:px-12 sm:py-14">
+          <div className="relative overflow-hidden border border-border/80 bg-surface/40 px-6 py-14 sm:px-14 sm:py-20">
             <div
-              className="flow-orb pointer-events-none absolute -left-16 top-1/2 h-56 w-56 -translate-y-1/2 rounded-full opacity-40 blur-3xl"
+              className="flow-orb pointer-events-none absolute -left-16 top-1/2 h-56 w-56 -translate-y-1/2 rounded-full opacity-25 blur-3xl"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(125,211,192,0.4) 0%, transparent 70%)",
+                  "radial-gradient(circle, rgba(142,224,200,0.28) 0%, transparent 70%)",
               }}
               aria-hidden
             />
-            <div className="relative flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
-              <div className="max-w-xl">
-                <h2 className="text-3xl font-semibold tracking-tight text-text sm:text-4xl">
+            <div className="relative flex flex-col items-start justify-between gap-10 sm:flex-row sm:items-end">
+              <div className="max-w-2xl">
+                <h2 className="font-display text-4xl leading-[1.05] text-text sm:text-5xl lg:text-6xl">
                   {t("finalTitle")}
                 </h2>
-                <p className="mt-4 text-base leading-relaxed text-muted">
+                <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
                   {t("finalBody")}
                 </p>
               </div>

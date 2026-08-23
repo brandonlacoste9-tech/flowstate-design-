@@ -10,7 +10,7 @@ export function WorkGrid({
   locale: Locale;
 }) {
   return (
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid auto-rows-[minmax(260px,1fr)] gap-3 sm:grid-cols-2 lg:auto-rows-[minmax(340px,1fr)]">
       {studies.map((study, i) => (
         <FadeIn key={study.slug} delay={i * 0.06}>
           <WorkCard study={study} locale={locale} />

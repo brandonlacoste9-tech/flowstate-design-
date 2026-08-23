@@ -4,17 +4,19 @@ import type { Locale } from "@/content/types";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/motion/FadeIn";
-import { WorkCard } from "@/components/work/WorkCard";
+import { WorkStage } from "@/components/work/WorkStage";
 import { Button } from "@/components/ui/Button";
 
 export async function FeaturedWork() {
   const t = await getTranslations("home");
   const tNav = await getTranslations("nav");
   const locale = (await getLocale()) as Locale;
-  const studies = getFeaturedCaseStudies();
+  const rest = getFeaturedCaseStudies().slice(3, 6);
+
+  if (rest.length < 3) return null;
 
   return (
-    <section className="py-20 sm:py-24">
+    <section className="py-20 sm:py-28">
       <Container>
         <FadeIn>
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
@@ -29,13 +31,9 @@ export async function FeaturedWork() {
           </div>
         </FadeIn>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {studies.map((study, i) => (
-            <FadeIn key={study.slug} delay={i * 0.08}>
-              <WorkCard study={study} locale={locale} />
-            </FadeIn>
-          ))}
-        </div>
+        <FadeIn delay={0.08} className="mt-12">
+          <WorkStage studies={rest} locale={locale} />
+        </FadeIn>
       </Container>
     </section>
   );

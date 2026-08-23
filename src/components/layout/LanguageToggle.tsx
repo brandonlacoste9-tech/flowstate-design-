@@ -23,7 +23,7 @@ export function LanguageToggle() {
           className={cn(
             "rounded-full px-2.5 py-1 uppercase transition-colors",
             locale === code
-              ? "bg-accent text-bg"
+              ? "bg-text text-bg"
               : "text-muted hover:text-text",
           )}
           aria-pressed={locale === code}

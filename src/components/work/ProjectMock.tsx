@@ -34,8 +34,9 @@ export function ProjectMock({
           src={study.image}
           alt=""
           fill
+          unoptimized
           sizes="(max-width: 1024px) 100vw, 960px"
-          className="object-cover"
+          className="object-cover object-top"
         />
       </div>
     </div>

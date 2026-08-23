@@ -1,17 +1,19 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { Button } from "@/components/ui/Button";
+import { studio } from "@/content/studio";
+import type { Locale } from "@/content/types";
 
 export function AboutSnippet() {
   const t = useTranslations("home");
-  const tMeta = useTranslations("meta");
+  const locale = useLocale() as Locale;
 
   return (
-    <section className="border-t border-border/60 py-20 sm:py-24">
+    <section className="border-t border-border/60 py-20 sm:py-28">
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid items-end gap-12 lg:grid-cols-[1.15fr_0.85fr]">
           <FadeIn>
             <SectionHeading
               eyebrow={t("aboutEyebrow")}
@@ -26,24 +28,22 @@ export function AboutSnippet() {
           </FadeIn>
 
           <FadeIn delay={0.12}>
-            <div className="relative overflow-hidden rounded-[var(--radius)] border border-border bg-surface/50 p-8">
-              <div
-                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full opacity-40 blur-2xl"
-                style={{
-                  background:
-                    "radial-gradient(circle, rgba(125,211,192,0.45), transparent 70%)",
-                }}
-                aria-hidden
-              />
-              <p className="relative font-mono text-xs uppercase tracking-[0.16em] text-accent">
-                {tMeta("siteName")}
+            <div className="border-t border-border/80 pt-6">
+              <p className="font-display text-5xl leading-none text-text sm:text-6xl">
+                {studio.city[locale]}
               </p>
-              <p className="relative mt-4 text-2xl font-semibold tracking-tight text-text">
-                {t("aboutTitle")}
-              </p>
-              <p className="relative mt-4 text-sm leading-relaxed text-muted">
-                {tMeta("homeDescription")}
-              </p>
+              <a
+                href={studio.phoneHref}
+                className="mt-5 block font-display text-2xl text-muted transition-colors hover:text-accent"
+              >
+                {studio.phone}
+              </a>
+              <a
+                href={studio.emailHref}
+                className="mt-2 block text-sm text-muted transition-colors hover:text-accent"
+              >
+                {studio.email}
+              </a>
             </div>
           </FadeIn>
         </div>

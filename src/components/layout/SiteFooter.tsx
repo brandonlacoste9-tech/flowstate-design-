@@ -16,14 +16,14 @@ export function SiteFooter() {
   ] as const;
 
   return (
-    <footer className="border-t border-border/80 bg-surface/40 py-12">
+    <footer className="border-t border-border/80 bg-surface/30 py-16">
       <Container className="grid gap-10 sm:grid-cols-[1.4fr_1fr]">
         <div className="space-y-4">
           <LogoMark />
           <p className="max-w-md text-sm leading-relaxed text-muted">
             {t("footer.blurb")}
           </p>
-          <p className="text-xs text-muted">{t("footer.location")}</p>
+          <p className="font-display text-lg text-text/90">{t("footer.location")}</p>
           <a
             href={studio.emailHref}
             className="inline-block text-sm text-accent transition-colors hover:text-accent-hover"

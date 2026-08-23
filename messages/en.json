@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "siteName": "Flowstate",
+    "homeDescription": "Flowstate rebuilds the website you already have, and builds new ones from scratch. Montreal. Brandon Leroux. brandonlacoste9@gmail.com"
+  },
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "startProject": "Start a project"
+  },
+  "footer": {
+    "blurb": "Rebuilds, redesigns, and brand-new websites. Your facts. Your photos. No invented prices or fake booking.",
+    "location": "Montreal · EN / FR",
+    "rights": "All rights reserved."
+  },
+  "hero": {
+    "eyebrow": "flowstate-webdesign.com · Montreal",
+    "title": "We rebuild the site you have. We also build the one you don’t.",
+    "subtitle": "Flowstate is Brandon Leroux. Next.js sites for restaurants, trades, and local businesses — honest about hours, rooms, and how you actually take a table.",
+    "point1": "Rebuilds and redesigns of live sites",
+    "point2": "Brand-new websites from a name and a phone",
+    "point3": "We don’t invent prices, hours, or booking tools",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "See the work",
+    "previewCaption": "Recent rebuilds — restaurants and trades"
+  },
+  "proof": {
+    "montreal": "Montreal",
+    "montrealDetail": "514. We work with rooms and shops in Quebec and across Canada.",
+    "bilingual": "EN / FR",
+    "bilingualDetail": "English-first when that’s your house language. French when you need it — not a widget.",
+    "response": "Real contact",
+    "responseDetail": "brandonlacoste9@gmail.com · 514-348-1161. A person, not a black hole.",
+    "craft": "Honest builds",
+    "craftDetail": "If you don’t take tables on the site, neither does the preview."
+  },
+  "trust": {
+    "title": "Built for",
+    "local": "Restaurants and rooms",
+    "startups": "Trades and local shops",
+    "creatives": "Anyone with a live site that no longer fits"
+  },
+  "testimonials": {
+    "eyebrow": "How we work",
+    "title": "No fake reviews",
+    "description": "We don’t invent client quotes. The work is the proof — click through the rebuilds."
+  },
+  "home": {
+    "featuredEyebrow": "Work",
+    "featuredTitle": "Recent rebuilds",
+    "featuredDescription": "Live businesses. We rebuilt their sites as Next.js previews. Their WordPress or current site stays until they say switch.",
+    "packagesEyebrow": "What we do",
+    "packagesTitle": "Rebuild. New site. Custom when it isn’t a brochure.",
+    "packagesCta": "See services",
+    "processEyebrow": "Process",
+    "processTitle": "From your live pages to a preview you can click",
+    "aboutEyebrow": "Studio",
+    "aboutTitle": "Design in a flow state",
+    "aboutBody": "Flowstate is one person who builds websites the way the business actually runs. Montreal. Next.js. No invented diner at the wrong address.",
+    "aboutCta": "About",
+    "finalTitle": "Send the live URL",
+    "finalBody": "If you have a site, send it. If you don’t, send the name and the phone. I’ll tell you what I’d rebuild — and what I won’t invent.",
+    "finalCta": "Contact"
+  },
+  "work": {
+    "title": "Work",
+    "description": "Rebuilds of real sites. We don’t claim we already replaced their live pages.",
+    "viewCase": "Read the rebuild",
+    "challenge": "What was there",
+    "approach": "What we did",
+    "outcome": "Where it stands",
+    "interfaceLabel": "The room",
+    "cta": "Start a similar rebuild",
+    "ctaBody": "Send your live URL. We’ll look at it the same way."
+  },
+  "services": {
+    "title": "Services",
+    "description": "Two jobs: rebuild the website you already have, or make a new one. Custom when you need a maître, music, or tools you already pay for.",
+    "includes": "Includes",
+    "from": "",
+    "customTitle": "Something that isn’t a five-page site?",
+    "customBody": "Chat that knows the board. Gift cards you already sell. Directories. We still won’t fake OpenTable or invent a price.",
+    "customCta": "Talk it through"
+  },
+  "about": {
+    "title": "About",
+    "lead": "Flowstate is Brandon Leroux. I rebuild websites and I make new ones.",
+    "body": "Most of the work is restaurants, diners, trades, clinics — places with a phone number and a live site that no longer matches the room. I read what they actually print. I don’t invent hours, dollar prices, or a booking tool they don’t have. English-first when that’s their site. French when they need it.",
+    "locationTitle": "Where",
+    "locationBody": "Montreal. 514-348-1161. brandonlacoste9@gmail.com. The studio site is flowstate-webdesign.com."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Email or call. If you have a live site, paste the URL in the message.",
+    "directEmail": "Or write directly:",
+    "name": "Name",
+    "email": "Email",
+    "projectType": "What you need",
+    "budget": "Budget, if you have one",
+    "message": "Message",
+    "submit": "Send",
+    "sending": "Sending…",
+    "success": "Got it. I’ll reply from brandonlacoste9@gmail.com.",
+    "error": "That didn’t send. Email brandonlacoste9@gmail.com or call 514-348-1161.",
+    "types": {
+      "rebuild": "Rebuild / redesign my site",
+      "new": "Brand-new website",
+      "both": "Not sure — look at what I have",
+      "other": "Something else"
+    },
+    "budgets": {
+      "u3": "Under $3k",
+      "3to6": "$3k – $6k",
+      "6to12": "$6k – $12k",
+      "12p": "$12k+",
+      "tbd": "Not sure yet"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "That page doesn’t exist or was moved.",
+    "cta": "Back home"
+  }
+}

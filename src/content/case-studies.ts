@@ -38,13 +38,14 @@ export const caseStudies: CaseStudy[] = [
     accent: "#c45c26",
     image: "/work/wellington-diner.jpg",
     liveUrl: "https://www.wellingtondiner.com/",
+    previewUrl: "https://wellington-diner.netlify.app",
     title: {
       en: "Wellington Diner — the room on Wellington, not a chain",
       fr: "Wellington Diner — la salle sur Wellington, pas une chaîne",
     },
     summary: {
-      en: "A rebuild of wellingtondiner.com. Jeff’s diner at 1385 Wellington Street West. Menu, hours, the host who does not take tables.",
-      fr: "Une refonte de wellingtondiner.com. Le diner de Jeff au 1385 Wellington Street West. Menu, heures, l’hôte qui ne prend pas de tables.",
+      en: "A rebuild of wellingtondiner.com, live at wellington-diner.netlify.app. Jeff’s diner at 1385 Wellington Street West. Menu, hours, the host who does not take tables.",
+      fr: "Une refonte de wellingtondiner.com, en ligne sur wellington-diner.netlify.app. Le diner de Jeff au 1385 Wellington Street West. Menu, heures, l’hôte qui ne prend pas de tables.",
     },
     challenge: {
       en: "A neighbourhood diner with a live site, a real email, and a real phone. Reservations are not something a chatbot should pretend to take. Similar names nearby are easy to mix up.",
@@ -55,8 +56,8 @@ export const caseStudies: CaseStudy[] = [
       fr: "Nous avons reconstruit le diner tel qu’il est : la devanture, les assiettes qu’ils photographient, les heures qu’ils impriment. L’hôte répond menu et heures. Les tables restent au diner — téléphone ou walk-in — pas un faux formulaire.",
     },
     outcome: {
-      en: "A Next.js preview of their diner. We did not invent a second address, and we did not let a chatbot take reservations.",
-      fr: "Un aperçu Next.js de leur diner. Nous n’avons pas inventé une deuxième adresse, et nous n’avons pas laissé un robot prendre des réservations.",
+      en: "The rebuild is live at wellington-diner.netlify.app. We did not invent a second address, and we did not let a chatbot take reservations.",
+      fr: "La refonte est en ligne sur wellington-diner.netlify.app. Nous n’avons pas inventé une deuxième adresse, et nous n’avons pas laissé un robot prendre des réservations.",
     },
   },
   {

@@ -54,6 +54,18 @@ export async function CaseStudyView({
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
             {study.summary[locale]}
           </p>
+          {study.previewUrl ? (
+            <p className="mt-6">
+              <a
+                href={study.previewUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-bg transition-colors hover:bg-accent-hover"
+              >
+                {t("viewPreview")} →
+              </a>
+            </p>
+          ) : null}
         </FadeIn>
 
         <FadeIn delay={0.08}>

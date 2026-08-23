@@ -12,7 +12,7 @@ export function ProjectMock({
   className?: string;
   compact?: boolean;
 }) {
-  const url = study.liveUrl?.replace(/^https?:\/\//, "") ?? `flowstate-webdesign.com/work/${study.slug}`;
+  const url = (study.previewUrl ?? study.liveUrl)?.replace(/^https?:\/\//, "") ?? `flowstate-webdesign.com/work/${study.slug}`;
 
   return (
     <div

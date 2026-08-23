@@ -56,6 +56,11 @@ export function WorkCard({
         <p className="line-clamp-3 text-sm leading-relaxed text-muted">
           {study.summary[locale]}
         </p>
+        {study.previewUrl ? (
+          <span className="mt-auto font-mono text-[10px] uppercase tracking-[0.14em] text-accent">
+            {study.previewUrl.replace(/^https?:\/\//, "")}
+          </span>
+        ) : null}
       </div>
     </Link>
   );

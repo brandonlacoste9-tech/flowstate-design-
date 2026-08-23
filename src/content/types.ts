@@ -10,6 +10,7 @@ export type CaseStudy = {
   accent: string;
   image: string;
   liveUrl?: string;
+  previewUrl?: string;
   title: LocalizedString;
   summary: LocalizedString;
   challenge: LocalizedString;

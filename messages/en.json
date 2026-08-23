@@ -68,6 +68,7 @@
     "title": "Work",
     "description": "Rebuilds of real sites. We don’t claim we already replaced their live pages.",
     "viewCase": "Read the rebuild",
+    "viewPreview": "Open the live rebuild",
     "challenge": "What was there",
     "approach": "What we did",
     "outcome": "Where it stands",

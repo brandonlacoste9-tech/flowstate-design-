@@ -33,7 +33,15 @@ export async function FeaturedWork() {
 
         <div className="mt-12 grid auto-rows-[minmax(260px,1fr)] gap-3 sm:grid-cols-2 lg:auto-rows-[minmax(340px,1fr)]">
           {rest.map((study, i) => (
-            <FadeIn key={study.slug} delay={i * 0.05} className="h-full">
+            <FadeIn
+              key={study.slug}
+              delay={i * 0.05}
+              className={
+                i === rest.length - 1 && rest.length % 2 === 1
+                  ? "sm:col-span-2 h-full"
+                  : "h-full"
+              }
+            >
               <WorkCard study={study} locale={locale} className="h-full" />
             </FadeIn>
           ))}

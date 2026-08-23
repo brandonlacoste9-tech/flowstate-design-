@@ -238,6 +238,40 @@ export const caseStudies: CaseStudy[] = [
       fr: "La refonte est en ligne sur intermezzo-vernon.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas mis de téléphone à Castle s’il n’y en a pas.",
     },
   },
+  {
+    slug: "clinique-mdcm",
+    niche: ["clinic", "rebuild", "healthcare"],
+    year: "2026",
+    featured: true,
+    accent: "#1e4a6e",
+    image: "/work/clinique-mdcm.jpg",
+    liveUrl: "https://mdcmclinic.com/",
+    previewUrl: "https://clinique-mdcm-gmf.netlify.app",
+    name: {
+      en: "Clinique MDCM",
+      fr: "Clinique MDCM",
+    },
+    title: {
+      en: "Clinique MDCM — two GMFs, NDG and Westmount",
+      fr: "Clinique MDCM — deux GMF, NDG et Westmount",
+    },
+    summary: {
+      en: "A rebuild of mdcmclinic.com, live at clinique-mdcm-gmf.netlify.app. NDG since 2009, Westmount with the St. Catherine group. Pomelo, GAP, Bonjour Santé — this site does not book a slot.",
+      fr: "Une refonte de mdcmclinic.com, en ligne sur clinique-mdcm-gmf.netlify.app. NDG depuis 2009, Westmount avec le groupe Sainte-Catherine. Pomelo, GAP, Bonjour Santé — ce site ne prend pas de plage.",
+    },
+    challenge: {
+      en: "Two sites, four booking doors. Registered patients go to Pomelo. GAP is collective inscription, not a walk-in. Acute care 0–18 is Bonjour Santé. Specialists have their own page. After 16:00 and weekends they publish urgent care only. Email is not a booking door.",
+      fr: "Deux sites, quatre portes de rendez-vous. Les patients inscrits vont sur Pomelo. Le GAP est une inscription collective, pas un walk-in. Soins aigus 0–18 : Bonjour Santé. Les spécialistes ont leur page. Après 16 h et les week-ends, ils publient urgences seulement. Le courriel n’est pas une porte de rendez-vous.",
+    },
+    approach: {
+      en: "We rebuilt around NDG and Westmount as they print them. Hours, phones, the four doors. HPV at both sites; contraception at Westmount only. The assistant orients — it does not book a slot and does not impersonate Pomelo.",
+      fr: "Nous avons reconstruit NDG et Westmount comme ils les impriment. Heures, téléphones, les quatre portes. HPV aux deux sites ; contraception à Westmount seulement. L’assistant oriente — il ne prend pas de plage et n’imite pas Pomelo.",
+    },
+    outcome: {
+      en: "The rebuild is live at clinique-mdcm-gmf.netlify.app. Their live site stays until they switch. We did not invent a walk-in queue or a RAMQ price.",
+      fr: "La refonte est en ligne sur clinique-mdcm-gmf.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas inventé une file walk-in ni un tarif RAMQ.",
+    },
+  },
 ];
 
 export function getCaseStudy(slug: string) {

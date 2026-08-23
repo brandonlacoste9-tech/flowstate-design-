@@ -120,35 +120,6 @@ export const caseStudies: CaseStudy[] = [
       fr: "La refonte est en ligne sur mednam.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas collé un login Clinika ni inventé un tarif.",
     },
   },
-  {
-    slug: "the-toronto-plumber",
-    niche: ["trades", "rebuild", "local-service"],
-    year: "2026",
-    featured: true,
-    accent: "#1d4e89",
-    image: "/work/toronto-plumber.jpg",
-    liveUrl: "https://thetorontoplumber.ca/",
-    title: {
-      en: "The Toronto Plumber — a trades site that can be called",
-      fr: "The Toronto Plumber — un site de métier qu’on peut appeler",
-    },
-    summary: {
-      en: "A rebuild of thetorontoplumber.ca. Phone first. Truck, tickets, the work they actually do.",
-      fr: "Une refonte de thetorontoplumber.ca. Le téléphone d’abord. Le camion, les tickets, le travail qu’ils font vraiment.",
-    },
-    challenge: {
-      en: "A plumber’s site has to be callable on a phone. Hours, service area, and proof (tickets, truck) matter more than agency atmosphere. Inventing licences or neighbourhoods they didn’t print would be a lie.",
-      fr: "Le site d’un plombier doit se composer au téléphone. Heures, zone, preuves (tickets, camion) comptent plus que l’ambiance agence. Inventer des licences ou des quartiers qu’ils n’impriment pas serait un mensonge.",
-    },
-    approach: {
-      en: "We rebuilt around the call: big phone, their truck photo, the tickets they already show. Copy stays with what their live site prints. No invented Red Seal claims we couldn’t source from them.",
-      fr: "Nous avons reconstruit autour de l’appel : gros téléphone, photo du camion, tickets qu’ils montrent déjà. Les textes restent sur ce que leur site imprime. Pas de sceau Red Seal inventé.",
-    },
-    outcome: {
-      en: "A Next.js preview built to be used with a thumb on a cracked phone. Their live site stays the source of truth until they switch.",
-      fr: "Un aperçu Next.js pensé pour un pouce sur un téléphone. Leur site en ligne reste la source jusqu’à ce qu’ils basculent.",
-    },
-  },
 ];
 
 export function getCaseStudy(slug: string) {

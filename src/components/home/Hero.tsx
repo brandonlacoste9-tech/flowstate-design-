@@ -118,17 +118,33 @@ export function Hero() {
             </div>
             {featured.length > 0 ? (
               <div className="grid grid-cols-3 gap-px border-t border-border bg-border sm:grid-cols-6">
-                {featured.slice(0, 6).map((study) => (
-                  <div key={study.slug} className="relative aspect-[4/3] bg-surface">
+                {featured.slice(0, 6).map((study) => {
+                  const href = study.previewUrl ?? study.liveUrl;
+                  const thumb = (
                     <Image
                       src={study.image}
-                      alt=""
+                      alt={study.title.en}
                       fill
                       sizes="160px"
-                      className="object-cover opacity-90"
+                      className="object-cover opacity-90 transition-opacity hover:opacity-100"
                     />
-                  </div>
-                ))}
+                  );
+                  return href ? (
+                    <a
+                      key={study.slug}
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="relative aspect-[4/3] bg-surface"
+                    >
+                      {thumb}
+                    </a>
+                  ) : (
+                    <div key={study.slug} className="relative aspect-[4/3] bg-surface">
+                      {thumb}
+                    </div>
+                  );
+                })}
               </div>
             ) : null}
           </div>

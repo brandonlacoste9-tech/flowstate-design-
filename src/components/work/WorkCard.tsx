@@ -3,6 +3,9 @@ import { Link } from "@/i18n/navigation";
 import type { CaseStudy, Locale } from "@/content/types";
 import { cn } from "@/lib/utils";
 
+const cardClass =
+  "group flex h-full flex-col overflow-hidden rounded-[var(--radius)] border border-border bg-surface/60 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-[0_0_0_1px_rgba(125,211,192,0.12),0_18px_40px_-24px_rgba(125,211,192,0.35)]";
+
 export function WorkCard({
   study,
   locale,
@@ -12,14 +15,9 @@ export function WorkCard({
   locale: Locale;
   className?: string;
 }) {
-  return (
-    <Link
-      href={`/work/${study.slug}`}
-      className={cn(
-        "group flex h-full flex-col overflow-hidden rounded-[var(--radius)] border border-border bg-surface/60 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-[0_0_0_1px_rgba(125,211,192,0.12),0_18px_40px_-24px_rgba(125,211,192,0.35)]",
-        className,
-      )}
-    >
+  const href = study.previewUrl ?? study.liveUrl;
+  const inner = (
+    <>
       <div className="relative aspect-[16/10] overflow-hidden border-b border-border/60 bg-bg">
         <Image
           src={study.image}
@@ -56,12 +54,26 @@ export function WorkCard({
         <p className="line-clamp-3 text-sm leading-relaxed text-muted">
           {study.summary[locale]}
         </p>
-        {study.previewUrl ? (
+        {href ? (
           <span className="mt-auto font-mono text-[10px] uppercase tracking-[0.14em] text-accent">
-            {study.previewUrl.replace(/^https?:\/\//, "")}
+            {href.replace(/^https?:\/\//, "")} →
           </span>
         ) : null}
       </div>
+    </>
+  );
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noreferrer" className={cn(cardClass, className)}>
+        {inner}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={`/work/${study.slug}`} className={cn(cardClass, className)}>
+      {inner}
     </Link>
   );
 }

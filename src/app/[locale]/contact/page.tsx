@@ -38,13 +38,6 @@ export default async function ContactPage({
               <p className="mt-4 text-sm text-muted">
                 {t("directEmail")}{" "}
                 <a
-                  href={studio.emailHref}
-                  className="text-accent transition-colors hover:text-accent-hover"
-                >
-                  {studio.email}
-                </a>
-                {" · "}
-                <a
                   href={studio.phoneHref}
                   className="text-accent transition-colors hover:text-accent-hover"
                 >
@@ -70,12 +63,7 @@ export default async function ContactPage({
               >
                 {studio.phone}
               </a>
-              <a
-                href={studio.emailHref}
-                className="mt-2 block text-sm text-muted transition-colors hover:text-accent"
-              >
-                {studio.email}
-              </a>
+              <p className="mt-2 text-sm text-muted">{studio.domain}</p>
             </div>
           </FadeIn>
         </div>

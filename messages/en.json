@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteName": "Flowstate",
-    "homeDescription": "Flowstate rebuilds the website you already have, and builds new ones from scratch. Montreal. Brandon Leroux. brandonlacoste9@gmail.com"
+    "homeDescription": "Flowstate rebuilds the website you already have, and builds new ones from scratch. A studio in Montreal."
   },
   "nav": {
     "work": "Work",
@@ -18,7 +18,7 @@
   "hero": {
     "eyebrow": "flowstate-webdesign.com · Montreal",
     "title": "We rebuild the site you have.\nWe also build the one you don’t.",
-    "subtitle": "Flowstate is Brandon Leroux. Next.js sites for restaurants, trades, and local businesses — honest about hours, rooms, and how you actually take a table.",
+    "subtitle": "A Montreal studio. Next.js sites for restaurants, trades, clinics, and local businesses — honest about hours, rooms, and how you actually take a table.",
     "kicker": "Rebuilds  ·  New sites  ·  Honest about the room",
     "point1": "Rebuilds and redesigns of live sites",
     "point2": "Brand-new websites from a name and a phone",
@@ -32,8 +32,8 @@
     "montrealDetail": "514. We work with rooms and shops in Quebec and across Canada.",
     "bilingual": "EN / FR",
     "bilingualDetail": "English-first when that’s your house language. French when you need it — not a widget.",
-    "response": "Real contact",
-    "responseDetail": "brandonlacoste9@gmail.com · 514-348-1161. A person, not a black hole.",
+    "response": "Studio line",
+    "responseDetail": "514-348-1161. We pick up. Not a ticket queue.",
     "craft": "Honest builds",
     "craftDetail": "If you don’t take tables on the site, neither does the preview."
   },
@@ -59,10 +59,10 @@
     "processTitle": "From your live pages to a clickable preview",
     "aboutEyebrow": "Studio",
     "aboutTitle": "Design in a flow state",
-    "aboutBody": "Flowstate is one person who builds websites the way the business actually runs. Montreal. Next.js. No invented diner at the wrong address.",
+    "aboutBody": "Websites the way the business actually runs. Montreal. Next.js. No invented diner at the wrong address.",
     "aboutCta": "About",
     "finalTitle": "Send the live URL",
-    "finalBody": "If you have a site, send it. If you don’t, send the name and the phone. I’ll tell you what I’d rebuild — and what I won’t invent.",
+    "finalBody": "If you have a site, send it. If you don’t, send the name and the phone. We’ll tell you what we’d rebuild — and what we won’t invent.",
     "finalCta": "Contact"
   },
   "work": {
@@ -88,15 +88,15 @@
   },
   "about": {
     "title": "About",
-    "lead": "Flowstate is Brandon Leroux. I rebuild websites and I make new ones.",
-    "body": "Most of the work is restaurants, diners, trades, clinics — places with a phone number and a live site that no longer matches the room. I read what they actually print. I don’t invent hours, dollar prices, or a booking tool they don’t have. English-first when that’s their site. French when they need it.",
+    "lead": "Flowstate is a Montreal studio. We rebuild websites and we make new ones.",
+    "body": "Most of the work is restaurants, diners, trades, clinics — places with a phone number and a live site that no longer matches the room. We read what they actually print. We don’t invent hours, dollar prices, or a booking tool they don’t have. English-first when that’s their site. French when they need it.",
     "locationTitle": "Where",
-    "locationBody": "Montreal. 514-348-1161. brandonlacoste9@gmail.com. The studio site is flowstate-webdesign.com."
+    "locationBody": "Montreal. 514-348-1161. flowstate-webdesign.com."
   },
   "contact": {
     "title": "Contact",
-    "description": "Email or call. If you have a live site, paste the URL in the message.",
-    "directEmail": "Or write directly:",
+    "description": "Call the studio, or send the form. If you have a live site, paste the URL in the message.",
+    "directEmail": "Call the studio:",
     "name": "Name",
     "email": "Email",
     "projectType": "What you need",
@@ -104,8 +104,8 @@
     "message": "Message",
     "submit": "Send",
     "sending": "Sending…",
-    "success": "Got it. I’ll reply from brandonlacoste9@gmail.com.",
-    "error": "That didn’t send. Email brandonlacoste9@gmail.com or call 514-348-1161.",
+    "success": "Got it. We’ll be in touch.",
+    "error": "That didn’t send. Call the studio at 514-348-1161.",
     "types": {
       "rebuild": "Rebuild / redesign my site",
       "new": "Brand-new website",

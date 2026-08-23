@@ -38,12 +38,7 @@ export function AboutSnippet() {
               >
                 {studio.phone}
               </a>
-              <a
-                href={studio.emailHref}
-                className="mt-2 block text-sm text-muted transition-colors hover:text-accent"
-              >
-                {studio.email}
-              </a>
+              <p className="mt-2 text-sm text-muted">{studio.domain}</p>
             </div>
           </FadeIn>
         </div>

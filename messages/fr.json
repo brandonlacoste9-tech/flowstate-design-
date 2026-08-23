@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteName": "Flowstate",
-    "homeDescription": "Flowstate refait le site que vous avez déjà, et en construit des neufs. Montréal. Brandon Leroux. brandonlacoste9@gmail.com"
+    "homeDescription": "Flowstate refait le site que vous avez déjà, et en construit des neufs. Un studio à Montréal."
   },
   "nav": {
     "work": "Projets",
@@ -18,7 +18,7 @@
   "hero": {
     "eyebrow": "flowstate-webdesign.com · Montréal",
     "title": "On refait le site que vous avez.\nOn construit aussi celui que vous n’avez pas.",
-    "subtitle": "Flowstate, c’est Brandon Leroux. Sites Next.js pour restos, métiers et commerces — honnêtes sur les heures, les salles, et comment vous prenez vraiment une table.",
+    "subtitle": "Un studio à Montréal. Sites Next.js pour restos, métiers, cliniques et commerces — honnêtes sur les heures, les salles, et comment vous prenez vraiment une table.",
     "kicker": "Refontes  ·  Sites neufs  ·  Honnête sur la salle",
     "point1": "Refontes et redesigns de sites en ligne",
     "point2": "Sites neufs à partir d’un nom et d’un téléphone",
@@ -32,8 +32,8 @@
     "montrealDetail": "514. On travaille avec des salles et des commerces au Québec et au Canada.",
     "bilingual": "EN / FR",
     "bilingualDetail": "L’anglais d’abord si c’est votre langue maison. Le français quand il faut — pas un gadget.",
-    "response": "Vrai contact",
-    "responseDetail": "brandonlacoste9@gmail.com · 514-348-1161. Une personne, pas un trou noir.",
+    "response": "Ligne du studio",
+    "responseDetail": "514-348-1161. On décroche. Pas une file de tickets.",
     "craft": "Builds honnêtes",
     "craftDetail": "Si vous ne prenez pas de tables sur le site, l’aperçu non plus."
   },
@@ -59,10 +59,10 @@
     "processTitle": "De vos pages en ligne à un aperçu cliquable",
     "aboutEyebrow": "Studio",
     "aboutTitle": "Design en flow state",
-    "aboutBody": "Flowstate, c’est une personne qui construit les sites comme le commerce tourne vraiment. Montréal. Next.js. Pas de diner inventé à la mauvaise adresse.",
+    "aboutBody": "Des sites comme le commerce tourne vraiment. Montréal. Next.js. Pas de diner inventé à la mauvaise adresse.",
     "aboutCta": "À propos",
     "finalTitle": "Envoyez l’URL en ligne",
-    "finalBody": "Si vous avez un site, envoyez-le. Sinon, le nom et le téléphone. Je vous dirai ce que je referais — et ce que je n’inventerai pas.",
+    "finalBody": "Si vous avez un site, envoyez-le. Sinon, le nom et le téléphone. On vous dira ce qu’on referait — et ce qu’on n’inventera pas.",
     "finalCta": "Contact"
   },
   "work": {
@@ -88,15 +88,15 @@
   },
   "about": {
     "title": "À propos",
-    "lead": "Flowstate, c’est Brandon Leroux. Je refais des sites et j’en construis des neufs.",
-    "body": "La plupart du travail : restos, diners, métiers, cliniques — des lieux avec un téléphone et un site qui ne correspond plus à la salle. Je lis ce qu’ils impriment vraiment. Je n’invente pas les heures, les prix, ni un outil de réservation qu’ils n’ont pas. L’anglais d’abord si c’est leur site. Le français quand il faut.",
+    "lead": "Flowstate, un studio à Montréal. On refait des sites et on en construit des neufs.",
+    "body": "La plupart du travail : restos, diners, métiers, cliniques — des lieux avec un téléphone et un site qui ne correspond plus à la salle. On lit ce qu’ils impriment vraiment. On n’invente pas les heures, les prix, ni un outil de réservation qu’ils n’ont pas. L’anglais d’abord si c’est leur site. Le français quand il faut.",
     "locationTitle": "Où",
-    "locationBody": "Montréal. 514-348-1161. brandonlacoste9@gmail.com. Le site du studio : flowstate-webdesign.com."
+    "locationBody": "Montréal. 514-348-1161. flowstate-webdesign.com."
   },
   "contact": {
     "title": "Contact",
-    "description": "Courriel ou téléphone. Si vous avez un site, collez l’URL dans le message.",
-    "directEmail": "Ou écrivez directement :",
+    "description": "Appelez le studio, ou envoyez le formulaire. Si vous avez un site, collez l’URL dans le message.",
+    "directEmail": "Appelez le studio :",
     "name": "Nom",
     "email": "Courriel",
     "projectType": "Ce dont vous avez besoin",
@@ -104,8 +104,8 @@
     "message": "Message",
     "submit": "Envoyer",
     "sending": "Envoi…",
-    "success": "Reçu. Je réponds depuis brandonlacoste9@gmail.com.",
-    "error": "Ça n’est pas parti. Écrivez à brandonlacoste9@gmail.com ou appelez le 514-348-1161.",
+    "success": "Reçu. On vous écrit.",
+    "error": "Ça n’est pas parti. Appelez le studio au 514-348-1161.",
     "types": {
       "rebuild": "Refonte / redesign de mon site",
       "new": "Site tout neuf",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s · Flowstate",
   },
   description:
-    "We rebuild the website you already have, and we build new ones. Montreal. Brandon Leroux.",
+    "We rebuild the website you already have, and we build new ones. A studio in Montreal.",
 };
 
 export default function RootLayout({

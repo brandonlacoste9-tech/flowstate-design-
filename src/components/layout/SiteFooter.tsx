@@ -25,17 +25,12 @@ export function SiteFooter() {
           </p>
           <p className="font-display text-lg text-text/90">{t("footer.location")}</p>
           <a
-            href={studio.emailHref}
-            className="inline-block text-sm text-accent transition-colors hover:text-accent-hover"
-          >
-            {studio.email}
-          </a>
-          <a
             href={studio.phoneHref}
             className="block text-sm text-accent transition-colors hover:text-accent-hover"
           >
             {studio.phone}
           </a>
+          <p className="text-sm text-muted">{studio.domain}</p>
         </div>
 
         <nav aria-label="Footer" className="flex flex-col gap-2 sm:items-end">
